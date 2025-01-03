@@ -1,0 +1,112 @@
+:root {
+  --white: #fff;
+  --primary: #61ecbc;
+  --black: #182339;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  min-height: 90vh;
+}
+
+.container {
+  max-width: 60rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.app-tittle {
+  font-size: 3.8rem;
+  color: var(--white);
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.content {
+  margin-top: 5rem;
+  padding: 6rem 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form, .field {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.field label {
+  font-size: 2.2rem;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.form select {
+  font-size: 1.8rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #ECEBEB;
+}
+
+.form [type="submit"] {
+  background-color: var(--primary);
+  color: var(--black);
+  border: none;
+  font-size: 2.2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 900;
+  transition: all 0.3s;
+}
+
+.form [type="submit"]:hover {
+  background-color: #18dba7;
+  scale: 1.01;
+}
+
+.result-wrapper {
+  margin-top: 5rem;
+}
+
+.result-wrapper h2 {
+  color: var(--black);
+  text-align: center;
+}
+
+.result {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.result img {
+  width: 100px;
+}
+
+.result p {
+  margin: 0 0 1rem 0;
+  color: var(--black);
+}
+
+.result p span {
+  font-weight: 700;
+}
+
+.error-message{
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(220, 53, 53);
+  border-radius: 1rem;
+  padding: 7px;
+}
