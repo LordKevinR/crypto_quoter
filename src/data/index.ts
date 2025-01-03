@@ -1,4 +1,3 @@
-import { useCryptoStore } from '../Stores/store';
 import {Currency} from '../types';
 
 export const currencies: Currency[] = [
